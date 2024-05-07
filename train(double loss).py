@@ -157,7 +157,7 @@ edges = edges.to(device)
 
 # model
 negatives_mask = ~torch.eye(args.batch_size * 2, args.batch_size * 2, dtype=bool).to(device)
-discriminator = Edge_Discriminator(args.nlayers, nnodes, input_dim, args.hidden_dim, input_dim, args.hidden_dim, 0.1, 0.5).to(device)
+discriminator = Edge_Discriminator(args.nlayers, nnodes, input_dim, args.hidden_dim, input_dim, args.hidden_dim, args.alpha, 0.5).to(device)
 criterion = LabelDivision(args, input_dim).to(device)
 
 # optimizer_discriminator = torch.optim.Adam(discriminator.parameters(), lr=0.05)
