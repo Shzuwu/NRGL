@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 28 15:35:35 2024
-
+2025
 @author: Administrator
 """
 
@@ -110,3 +110,4 @@ class Dataset:
         if use_gpu:
             graph=graph.to(gpu_device)
         self.graph = graph
+
