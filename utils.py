@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 28 15:34:47 2024
-
+2025
 @author: Administrator
 """
 
@@ -116,4 +116,5 @@ def generate_random_node_pairs(nnodes, nedges, backup=300):
     rand_edges = torch.from_numpy(rand_edges)
     rand_edges = rand_edges[:, rand_edges[0,:] != rand_edges[1,:]]  
     rand_edges = rand_edges[:, 0: nedges]
+
     return rand_edges
