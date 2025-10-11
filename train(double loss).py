@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 28 15:36:00 2024
-
+2025
 @author: Administrator
 """
 
@@ -202,6 +202,7 @@ print('LP: epoch:{}, auc:{}, recall:{}, F1:{}'.format(a_lp[0], a_lp[1], a_lp[3],
 print('HP: epoch:{}, auc:{}, recall:{}, F1:{}'.format(a_hp[0], a_hp[1], a_hp[3], a_hp[4]))
 print('args:', args)
 print('train (doule loss)')
+
 
 
 
