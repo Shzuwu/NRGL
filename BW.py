@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """
+2025
 Created on Sun Jan 28 15:36:13 2024
 
 @author: Administrator
@@ -217,3 +218,4 @@ class BWGNN_Hetero(nn.Module):
         h_all = self.act(h_all)
         h_all = self.linear4(h_all)
         return h_all
+
